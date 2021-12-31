@@ -607,7 +607,6 @@ a {
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     width: fit-content;
-    margin: 20px auto;
   }
 
   .project-technologies {
