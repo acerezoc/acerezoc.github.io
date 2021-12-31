@@ -548,7 +548,7 @@ a {
   }
 
   #nav {
-    background-attachment: fixed;
+    background-attachment: inherit;
   }
 
   .head-title {
@@ -604,8 +604,18 @@ a {
   .head-menu-wrap {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: fit-content;
+  }
+
+  .project-technologies {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 20px auto;
   }
 }
 
