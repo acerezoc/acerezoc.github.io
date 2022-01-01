@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>{{ site.site_title }}</title>
+        <title>Alvaro Cerezo - Urban Data Scientist</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="google-site-verification" content="k4p92PduVR_7ZqAlB8-OMnONNOl9GkkmUh4dlKfbY7o" />
         
@@ -16,7 +16,7 @@
         <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
         <meta name="description" content="Portfolio - Alvaro Cerezo | Urban Data Scientist">
         <style>
-            #cover {background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/01_cover.png"); background-size: cover; background-position: center;} 
+            #cover {background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/00_cover.png"); background-size: cover; background-position: center;} 
             #home {text-align: center; display: block}
             #abstract {color: #7e7e7e;}
         </style>
@@ -24,55 +24,157 @@
     <body>
         <section class="head" id="cover">
             <div class="head-inner-wrap">
-                <div class="head-name head-title animated" id="head-name">Project_01</div>
-                <div class="head-punchline animated">Intro Headline</div>
+                <div class="head-name head-title animated" id="head-name">Flatten the Curve</div>
+                <div class="head-punchline animated">A new energy exchange approach on a district scale</div>
             </div>
         </section>
         <section class="section about" id="about">
             <div id="about-text">
                 <p class="paragraph-text justify-text" id="abstract">
-                    My name is Alvaro Cerezo and I am an architect and urban planner specializing in Data Science and GIS technologies. I hold a Msc in Architecture & Urban planning from Universidad Europea de Madrid and a Master in City & Technology from the Institute of Advanced Architecture of Catalonia.
+                    The energy supply sector is the largest contributor to global greenhouse gas emissions. Within that figure, households account for 29% of the consumption. On top of that, the average building wastes 30% of the energy because of inefficiencies. We consider that the main challenge is to increase our energy efficiency, make energy sources renewable, and obtain a higher degree of self-sufficiency. We can divide challenges into two types. From the production side, there are solutions such as solar panels, storage, and microgrid technologies. From the consumption side, building renovation strategies, electric vehicles, and smart technologies.
                 </p>
                 <br><br><hr><br><br>
                 <div class="portfolio-heading">Introduction</div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    In the project “Flattening the curve” our aim is to analyze the energy consumption and energy production data to propose active and passive strategies that can bring a new and more sustainable energy model.
                 </p>
                 <div class=image>
-                    <img class="portfolio_image" src="img\02_analysis.gif" alt="An example to try"/>
-                    <figcaption>An example to try</figcaption>
+                    <img class="portfolio_image" src="img\image01.png" alt="Energy framework: production & consumption"/>
+                    <figcaption>Energy framework: production & consumption</figcaption>
                 </div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    We saw huge technological advances in green energy production from biomass technologies to photovoltaics, in spatial terms, bigger energy output per m² with much lower costs. This could be a game-changer on energy production and distribution. The current system consists of big production nodes owned by electrical companies transferring energy to consumers by the grid but is transitioning from many production nodes (photovoltaic) to consumers. It is a more decentralized system. Some of its benefits are greener energies and savings in transportation costs. But that comes with some challenges as well.
                 </p>
-                <br>
-                <div class="portfolio-heading">Framework</div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    <b>When we say flattening the curve what do we mean?</b>
                 </p>
+                <p class="paragraph-text justify-text">
+                    One of the most challenging problems with the rise of photovoltaics is the duck curve problem. This has accentuated a spike in production (or less consumption during the day) and a high in demand for traditional grid electricity during the night, these variances of energy create a “bottleneck on which electrical grids can cope but with high costs. Stop Starting at the beginning of the day and ramping at dawn. Microgrid technology is part of the solution to make the system more adaptable and resilient, but it’s not enough. Experts believe to get to at least 80% renewable we would need spatial diversity and short duration storage; this is only possible with a mix of strategies, that go from building scale to district-scale. Without these measures, the costs associated with the ramp-up would outrun the benefits of photovoltaic production.
+                </p>
+                <p class="paragraph-text justify-text">
+                    Our reference framework is MES Barcelona. This framework promotes a new energy model for Barcelona, considering both public and private sectors. It distinguishes two types of projects; active and passive. They do not require investment from the building owners and it is open to private developments.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image02.png" alt="Flattening the curve"/>
+                    <figcaption>Flattening the curve</figcaption>
+                </div>
                 <br>
                 <div class="portfolio-heading">Methodology</div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    The analysis part is divided into 2 categories: consumption and production. For the consumption part, we have land use, the total buildings’ surface (m²), buildings’ energy certificates, and energy use patterns. For the production part, we analyzed the solar radiation which gives us an amount of potential production of energy. For both, a time pattern was added, daily as well as seasonal. The next step was evaluating the data and visualizing consumption and generation patterns. On this basis, we created the catalog of consumption & production per building. To do that, from the value of production we subtracted the consumption value and classified them. It helped us to identify the biggest producer and consumer in the area of Poblenou.
                 </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image03.png" alt="Data Pipeline"/>
+                    <figcaption>Data Pipeline</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    All those steps lead to identifying which strategies would be the best for which building. For Mitigation: how we can redistribute the land use? How the renovation process will decrease the use of energy, and for production, we will look at areas where there is potential for production to place solar panels or later energy storage facilities. To some buildings, we could apply straight production strategies, while to the others we need to start from the renovation process.
+                </p>
+                <p class="paragraph-text justify-text">
+                    <b>Data, Tools & Methods</b>
+                </p>
+                <p class="paragraph-text justify-text">
+                    We built two datasets ( one for winter and one for summer). the land use for each building on our site. To be more precise with calculations we determined more categories, so for example not only say it’s retail but to check what kind of retail is it, if it is a hotel or a shopping mall, because the energy patterns for this function are completely different. We also considered if the building is mixed-use (ex. residential and office). After gathering this information we run it through the time pattern, daily and seasonal (because of the difference between summer and winter). We also consider the energy certificates, which determine how energy efficient each building is. And finally, based on the roof’s surface of each building and its sun radiation, we estimate the production capacity, getting both energy production and energy consumption per building and at aggregated value.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image04.png" alt="Data Structure"/>
+                    <figcaption>Data Structure</figcaption>
+                </div>
+                <br>
+                <div class="portfolio-heading">Analysis</div>
+                <p class="paragraph-text justify-text">
+                    <b>Consumption - </b>We have got the values for the average consumption per type of land use and multiplied it by the building footprints, obtaining the consumption patterns per day. Every land use has its own pattern as you can see in the diagram on the left-bottom corner.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image05.gif" alt="An example to try"/>
+                    <figcaption>Hourly Summer Energy Consumption</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    <b>Production - </b>For the production curve, we did a similar process. In this case, we consider the rooftop area as the main indicator for the calculation of the potential energy that can be produced. We are just considering photovoltaic since it is the main solution promoted and installed currently in the city, aligned with the MES Barcelona tool.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image06.gif" alt="An example to try"/>
+                    <figcaption>Hourly Summer Energy Production</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    <b>Balance - </b>We managed to get the final energy balance by combining the consumption and production data, obtaining 4 different categories: high producers, mid producers, mid consumers, and high consumers. As you can see in the scatterplot, we distribute the buildings based on their consumption and production values.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image07.gif" alt="An example to try"/>
+                    <figcaption>Daily Energy Balance</figcaption>
+                </div>
+                <br>
+                <div class="portfolio-heading">Strategies</div>
+                <p class="paragraph-text justify-text">
+                    Once we have got all the data inside our tool it is time to make something out of it and promote a new energy model. Our previous data comparing consumption patterns and solar energy potential of each building, help us defining a potential self-sufficiency index and a pashed intervention plan for the whole district urban fabric.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image08.png" alt="An example to try"/>
+                    <figcaption>Strategies diagram</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    This is our starting point, we identify the current buildings that could be self-sufficient in case the solar panels will install on their roofs in blue and the ones that despite this would still have a negative energy balance in the red.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image09.gif" alt="An example to try"/>
+                    <figcaption>Baseline situation</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    <b>Renovation Strategy - </b>The first strategy is focused on the red buildings shown before, and reducing their current energy consumption. The selection of the buildings to intervene first on will be done following 2 criteria: -Their energy certification, with letter Gs as the worst efficient buildings and A as the better ones. -Their potential way towards becoming self-sufficient and share energy in the future.
+                </p>
+                <p class="paragraph-text justify-text">
+                    Our first criteria identify the potential of each building to reduce its current energy consumption, from an 80% reduction in the case of Gs certificates and 20 % in the case of Ds. Our second criteria, takes into account the temporal dimension, identifying 3 phases of intervention, based on the current energy balance of the buildings. We start from the ones that are farthest away from achieving self-sufficiency and end up with those closest to it.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image10.gif" alt="Renovation Strategy"/>
+                    <figcaption>Renovation Strategy</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    <b>Solar PV Production - </b>Therefore we need to combine it with solar energy production on the roof’s strategy as well. This would help to reduce, even more, the energy consumed during the sunny hours and even generate an excess that could be stored and exchanged later. Our strategy focuses now on the buildings with a positive overall energy balance or the blue dots on the right side of our scatterplot. This is the current situation with more than 1300 buildings with an opportunity to generate an energy excess.
+                </p>
+                <p class="paragraph-text justify-text">
+                    The way to choose the ones whose installation of solar panels could be financed by Barcelona Mes is by distributing the potential producers into three groups according to their capacity to collect energy to share, later on, dividing them from high to low producers. We can see here, how following the previous three phases explained in the previous renovation strategy, new potential higher producers that could be serviced by Barcelona Mes appear in the district.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image11.jpg" alt="Solar PV Production Strategy"/>
+                    <figcaption>Solar PV Production Strategy</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    <b>Energy exchange - </b>Our final step once we have completed both the renovation and production process is to allow the exchange of energy between the buildings around 22@district that still present a negative energy balance. Firstly, we analyze the closest producers with an energy excess to these buildings, based on the existing electrical distribution network.
+                </p>
+                <p class="paragraph-text justify-text">
+                    Once we cluster the possible neighbors to take energy from, the exchange takes place according to the excess and demand of energy of each of the different members of the new distributed and public network.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image12.gif" alt="Energy Microgrid distribution"/>
+                    <figcaption>Energy Microgrid distribution</figcaption>
+                </div>
                 <br>
                 <div class="portfolio-heading">Conclusion</div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    The final result is that after our renovation process, we can have more than 400 hundred new buildings that could have a big energy excess to be shared and included in the Barcelona MES tool.
                 </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image13.gif" alt="The final flat curve"/>
+                    <figcaption>The final flat curve</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    To conclude, we have talked all the dime about buildings and curves, but we do not have to forget that to achieve a new energy model, we need to build communities, physical and virtual ones, where everybody gets involved.
+                </p>
+                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/gLw6J3R7zGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                 <br>
                 <p class="paragraph-text justify-text" id="credits">
-                    <b>Title</b> is a project of IAAC, Institute for Advanced Architecture of Catalonia developed at Master in City & Technology by student: <b>Adriana Aguirre Such, Aishath Nadh Ha Naseer, Arina Novikova and Sinay Coskun</b> and faculty: <b>Diego Pajarito</b>.
+                    <b>Flatten the curve</b> is a project of IAAC, Institute for Advanced Architecture of Catalonia developed at Master in City & Technology by student: <b>Riccardo Palazzolo, Marta Maria Galdys, Nadh Ha Naseer, Juan Pablo Pintado, Alvaro Cerezo</b>, and faculty: <b>Angelos Chronis, Iacopo Neri, Mahsa Nikoufar and Androniki Pappa</b>.
                 </p>
                 <br>
                 <br>
                 <span class="hint--bottom bottom-link" aria-label="Home" id="home">
-                    <a href="https://www.reddit.com/u/{{ site.reddit_username }}"><i class="head-icon fas fa-home"></i></a>
+                    <a href="https://acerezoc.github.io/"><i class="head-icon fas fa-home"></i></a>
                 </span>
             </div>
         </section>
     </body>
     <footer class="footer footer-text">
-        Alvaro Cerezo &copy; 2021
+        Alvaro Cerezo &copy; 2022
     </footer>
 </html>

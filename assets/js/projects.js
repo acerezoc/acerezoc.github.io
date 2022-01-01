@@ -13,10 +13,10 @@ let render_projects = (slug) => {
         {
             image: 'assets/images/portfolio/energy_exchange.png',
             link: 'portfolio/project_01/portfolio.html',
-            title: 'Energy exchange',
+            title: 'Flatten the curve',
             demo: false,
-            technologies: ['Data visualization', 'Python'],
-            description: "Microgrid energy distribution network on a district scale",
+            technologies: ['QGIS', 'Grasshopper', 'SQL'],
+            description: "A new energy exchange approach on a district scale",
             categories: ['All', 'Data viz', 'Title_02', 'Title_03']
         },
         {
