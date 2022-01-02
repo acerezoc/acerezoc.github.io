@@ -82,6 +82,15 @@ let render_projects = (slug) => {
             description: "Microgrid energy distribution network on a district scale",
             categories: ['All', 'Title_02', 'Title_03']
         },
+        {
+            image: 'assets/images/portfolio/22_at_a_time.png',
+            link: 'portfolio/project_09/portfolio.html',
+            title: '22@ a time',
+            demo: false,
+            technologies: ['QGIS', 'Illustrator', 'Photoshop', 'Rhino'],
+            description: "A Transitional Urban Development",
+            categories: ['All', 'Title_03']
+        },
     ]
 
     let projects = [];

@@ -497,7 +497,7 @@ a {
   display: grid;
   -ms-grid-columns: (minmax(180px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  margin: 20px 0;
+  margin: 20px 0px 40px;
   grid-gap: 5px;
   grid-row-gap: 10px;
   width: 100%;
