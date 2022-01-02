@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>{{ site.site_title }}</title>
+        <title>Alvaro Cerezo - Urban Data Scientist</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="google-site-verification" content="k4p92PduVR_7ZqAlB8-OMnONNOl9GkkmUh4dlKfbY7o" />
         
@@ -16,7 +16,7 @@
         <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
         <meta name="description" content="Portfolio - Alvaro Cerezo | Urban Data Scientist">
         <style>
-            #cover {background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/01_cover.png"); background-size: cover; background-position: center;} 
+            #cover {background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/00_cover.png"); background-size: cover; background-position: center;} 
             #home {text-align: center; display: block}
             #abstract {color: #7e7e7e;}
         </style>
@@ -24,55 +24,180 @@
     <body>
         <section class="head" id="cover">
             <div class="head-inner-wrap">
-                <div class="head-name head-title animated" id="head-name">Project_01</div>
-                <div class="head-punchline animated">Intro Headline</div>
+                <div class="head-name head-title animated" id="head-name">Court Yazd City</div>
+                <div class="head-punchline animated">A computational approach to Vernacular Architecture</div>
             </div>
         </section>
         <section class="section about" id="about">
             <div id="about-text">
                 <p class="paragraph-text justify-text" id="abstract">
-                    My name is Alvaro Cerezo and I am an architect and urban planner specializing in Data Science and GIS technologies. I hold a Msc in Architecture & Urban planning from Universidad Europea de Madrid and a Master in City & Technology from the Institute of Advanced Architecture of Catalonia.
+                    Court Yadz city: A vernacular architecture is a machine learning project to virtually generate a district of the old town of Yazd. It recreates the key elements of this old town with its narrow streets, vegetalised courtyard and wind protection orientation. The project is an urban design program based on Grasshopper, Wallacei X and Self-Organized Map algorithm.
                 </p>
                 <br><br><hr><br><br>
                 <div class="portfolio-heading">Introduction</div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    Yazd is the second oldest city in the world, after Damascus. The city is located 850 m above sea level, on relatively flat terrain, and surrounded to the north and east by the Dasht-e Kavir and Dasht-e Lut deserts. The desert climate is characterized by drastic differences in day and night temperatures. The weather in the city is relatively cold at night from September to May and very extreme hot throughout the rest of the year. The city is known for its unique energy-efficient and environmentalist approach on both the urban and building scale, that maintain the cultural legacy of the region and provide various solutions to the extreme hot arid climate. Yazd and its elements are positioned based on weather conditions to provide human comfort and use natural energy sources.
+                </p>
+                <p class="paragraph-text justify-text">
+                    Yazd’s urban tissue provides a dense texture with long and narrow alleys preventing desert heat from entering urban spaces and preserving coolness and humidity in the summer. Street network orientation has a 45º angle (NE-SW) to protect people from sand and dust storms and to benefit from the wind breeze during the summer months. Its reduced width also helps to maintain the pedestrian zones in shadow from morning to noon due to the private buildings high walls. Public squares within the city are protected also from the harsh climatic conditions with the building blocks around them, acting as an obstacle to desert winds, while their location ensures a convenient and comfortable public transportation that reduces Yazd’s energy consumption.
                 </p>
                 <div class=image>
-                    <img class="portfolio_image" src="img\02_analysis.gif" alt="An example to try"/>
-                    <figcaption>An example to try</figcaption>
+                    <img class="portfolio_image" src="img\image01.gif" alt="Yazd urban tissue morphological properties"/>
+                    <figcaption>Yazd urban tissue's morphological properties</figcaption>
                 </div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    In addition to the street network three unique architectural elements define each of the single blocks inside the urban grid in order to overcome all unfavorable climate conditions without using extra energy. Construction of wind towers or “Badgirs” is used to create natural ventilation inside the buildings, while parts of the houses used during the summer are covered with dome-shaped roofs to lift the hot air away from the ground through ventilation shafts built at the peak of them. At last, an interior central courtyard is used as a semi-private space within the building, containing vegetation and water elements that help to refresh the whole environment inside the house and project some shadow during the summer.
                 </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image02.gif" alt="Lab-e Khandagh District: Architectural elements"/>
+                    <figcaption>Lab-e Khandagh District: Architectural elements</figcaption>
+                </div>
                 <br>
-                <div class="portfolio-heading">Framework</div>
-                <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
-                </p>
                 <br>
                 <div class="portfolio-heading">Methodology</div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    In order to define the computational design process, we have divided the script in two parts. The first one is the definition of the street network until the parcel unit, trying to respect as much as possible the current dwelling density of the area. The second one is in charge of the definition of the building, the typology of which is based mainly on the courtyard.
                 </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image03.png" alt="Definition of the Script"/>
+                    <figcaption>Definition of the Script</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    The phenotype is composed of four different pieces: the street network defined by the main public spaces, the wind-towers and the courtyard of each building and the building itself. Understanding the body-parts of the phenotype we define different objectives with the aim of improving the model in different ways.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image04.gif" alt="Definition of the Primtive Phenotype"/>
+                    <figcaption>Definition of the Primtive Phenotype</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    <b>1. Minimize the paths between public and private space:</b> With this objective we are able to locate most of the small dwellings around the public spaces. In this way we are able to locate the smaller houses around the public space, while the larger ones are relegated to the perimeter space functioning as a barrier against wind and sandstorms.
+                    <br>
+                    <br>
+                    <b>2. Minimize the wind exposure in the public space:</b> Protect the public spaces from the sandstorms of the desert.
+                    <br>
+                    <br>
+                    <b>3. Maximize the courtyard area:</b> In this culture most of the life occurred inside of the houses and provide them with a big interior patio allowing them to have a better family life.
+                    <br>
+                    <br>
+                    <b>4. Minimize the sun exposure in the streets and the public spaces:</b> Protection against the sun in a desert area is always necessary.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image05.png" alt="Grasshopper Code Pipeline"/>
+                    <figcaption>Grasshopper Code Pipeline</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    The location of the public spaces is the first piece of the canvas. From these squares the main edges start to grow until the perimeter, dividing the space in the very first big pieces. Afterwards, in another step, we subdivide them again until we reach the same density of units as the current Yazd urban tissue. The <b>first gene pool</b> is responsible for defining this second subdivision. After, we measure the addition of the distance and set it as the first goal
+                </p>
+                <p class="paragraph-text justify-text">
+                    The next step is to measure the wind exposure on the public spaces based on the main wind directions and rotate the proposed urban tissue orientation. Understanding the main wind directions in place, defined in the environmental setup with the sun radiance, we locate the different wind towers in every plot to maximize the wind exposition and improve their efficiency capturing wind. To do that we define <b>the second gene pool</b> in charge of the height of these towers. 
+                </p>
+                <p class="paragraph-text justify-text">
+                    In  the next step we generate the private central courtyard per parcel from the interio corner of the towed and protected from the sun exposure by it. <b>The third gene pool</b> vary the courtyards size to maximize the private open space per household.
+                </p>
+                <p class="paragraph-text justify-text">
+                    Once the setup of the tower and the courtyard is properly done, the building is defined by three pieces which close the area. The independent extrusion of these three pieces allow to maximize the shadow projection in the center area and the surrounding. The height is controlled by <b>the fourth gene pool</b>.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image06.png" alt="Evolutionary Matrix"/>
+                    <figcaption>Evolutionary Matrix</figcaption>
+                </div>
+                <br>
+                <br>
+                <div class="portfolio-heading">Analysis</div>
+                <p class="paragraph-text justify-text">
+                    From the start of the fitness objectives definition, the model was supposed to have a big conflict between two of them: The maximization of the courtyard in the households and the minimization of solar exposure on unbuilt spaces. Once the code was optimized for all the objectives by a process of a feedback loop of running Wallacei and making changes in the code, an interesting output was achieved where the minimization wind exposure objective tended to be optimized (2nd objective). But, the rest of objectives were failing to converge and even to achieve worse outputs (in the case of the 4th objective: the minimization of solar exposure).
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\wallacei01.jpg" alt="Optimization for the previous model"/>
+                    <figcaption>Optimization for the previous model</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    After the revaluation of the code itself, two major changes were applied to the grasshopper code: Changing the maximum heights of the gene pools that controlled the buildings to higher ones and making the model rotate in order to achieve a better optimization regarding the different wind exposure. Both changes were tested separately to evaluate the positive impact that these modifications could lead to. The better performance in the model due to changes was apparent as the wind exposure objective and the minimization of sun radiance were highly improved.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\wallacei02.jpg" alt="Optimization for improved objective: minimize solar exposure"/>
+                    <figcaption>Optimization for improved objective: minimize solar exposure</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    Although the results were leading to promising results, another kind of approach was tested: The disappearance of the conflict between solar exposure and courtyard maximization. This could be achieved by changing the second objective into a non- conflictive one: the maximization of the building area. In this scenario, the results obtained from Wallacei proved to achieve high standards of optimization of the model in 3 of the objectives (excluding the first objective: minimizing the distances between households and public spaces).
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\wallacei03.jpg" alt="Optimization for improved objective: minimize wind exposure"/>
+                    <figcaption>Optimization for improved objective: minimize wind exposure</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    Nevertheless, the previous objective (maximization of courtyard area) was recovered due to the fact that it was more interesting to analyze and try to give a response to more conflictive scenarios. Also because the goal of the urban exercise was based in the logics of Yadz, as before has been mentioned, due to the fact that Yazd is an inner city where its citizens depend and interact more in the private non built space (the courtyards). By running Wallacei component again through the two major changes mentioned before all together, the model showed a much better performance in 3 of the 4 objectives (with high improvements in the wind exposure minimization) while the solar radiation kept the same dynamics as in the attempt mentioned before the changes. In the Paralell Coordinate Plot of the final model, the conflict always mentioned between the last two objectives is still staying. Despite this factor, we can conclude that the changes improved in a significant way the proposed code and its optimization model.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\wallacei04.gif" alt="Final model with optimized conflicts"/>
+                </div>
+                <div class=image>
+                    <img class="portfolio_image" src="img\wallacei05.jpg" alt="Final model with optimized conflicts"/>
+                    <figcaption>Final model with optimized conflicts</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    <b>Urban Morphology Analysis - </b>As a conclusive image of the realized work, a 4×4 grid was created in order to explore the outputs for the performance for each objective (in the Y axis) and ordered from the best to the worst. It is interesting to observe how the objectives optimization respond to the aim that was to support:
+                    <br>
+                    <br>
+                    In <b>the first objective</b>, the best option shows a morphology where big households remain mostly in the perimeter while in the central areas have smaller households, which was one of the goals to protect the area from the wind
+                    <br>
+                    <br>
+                    In <b>the second objective</b>, the households are considerably bigger to create continuous barriers.
+                    <br>
+                    <br>
+                    In <b>the third and fourth objective</b> the model rotates in order to have a better sun performance. For both of them, the urban morphology selected is the same.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image07.gif" alt="Results ordered from best to worst for each objective"/>
+                    <figcaption>Results ordered from best to worst for each objective</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    <b>SOM Analysis - </b>We try to run a second level analysis on the results produced by Wallacei's genetic algorithm as a useful method that help to identify: genes correlations, useless genes or design problems in general. We use a Self-Organizing Map (SOM) algorithm to cluster and represent the set of genes for each individual produced by Wallacei as follow: 
+                    <br>
+                    <br>
+                    <b>Clustering:</b> SOM algorithm produces a low-dimensional(1D or 2D) discretized representation of clusters and each cluster represents a group of similar set of genes. The other objective of clustering is to quantify the data by replacing a group of observations (cluster) with one representative observation (prototype). 
+                    <br>
+                    <br>
+                    <b>Generate a phenotype per cluster:</b> From each cluster we processed the average value of each gene in order to have one representative phenotype per cluster. And represent them as a grid with their objectives values on a diamond chart
+                    <br>
+                    <br>
+                    <b>Final map generation:</b> SOM uses a neighborhood function to preserve the topological properties of the input space, and forms a discretely topological map where similar objects are grouped close together and dissimilar ones apart.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image08.gif" alt="Self-Organizing Map (SOM)"/>
+                    <figcaption>Self-Organizing Map (SOM)</figcaption>
+                </div>
+                <br>
+                <br>
+                <div class="portfolio-heading">Results</div>
+                <p class="paragraph-text justify-text">
+                    To select the final best individuals we used the Pareto optimality of our objectives. The Pareto optimality is the list of individuals that maximizes one or multiple objectives. Because Wallacei X evolutionary algorithm is based on the NSGA-2 algorithm (Deb et. al., 2001), it also uses the Pareto optimality during the individual selection phase of his evolutionary  algorithm. At the end of the training process we obtain 237 Pareto optimal individuals for our 4 objectives.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image09.gif" alt="Pareto Front selection"/>
+                    <figcaption>Pareto Front selection</figcaption>
+                </div>
+                <br>
                 <br>
                 <div class="portfolio-heading">Conclusion</div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    After all the analysis and clusterization was performed another data input was taken into consideration to choose the final model. “Maximum built-up area” data was introduced into our final results through Wallacei. Between the 9 options, the model that had more square meters in the ground floor was selected (219675 sqm).
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image10.png" alt="Final Selected Design"/>
+                    <figcaption>Final Selected Design</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    Wallacei is a powerful tool in order to design cities by designing the environment instead of designing the output. By introducing the objectives that responded better to the issues that the city of Yadz faces, a new way of design cities was tested. By unblackening the box of the component, several factors were understood in order to optimize the code and the objectives themselves and also create a new type of clusterization responding to the genes instead of the objectives.
                 </p>
                 <br>
                 <p class="paragraph-text justify-text" id="credits">
-                    <b>Title</b> is a project of IAAC, Institute for Advanced Architecture of Catalonia developed at Master in City & Technology by student: <b>Adriana Aguirre Such, Aishath Nadh Ha Naseer, Arina Novikova and Sinay Coskun</b> and faculty: <b>Diego Pajarito</b>.
+                    <b>Court Yazd City</b> is a project of IAAC, Institute for Advanced Architecture of Catalonia developed at Master in City & Technology by student: <b>Adriana Aguirre Such, Iñigo Esteban Marina, Tugdual Sarazin & Alvaro Cerezo Carrizo</b>, and faculty: <b>Milad Showkatbakhsh</b>.
                 </p>
-                <br>
-                <br>
-                <span class="hint--bottom bottom-link" aria-label="Home" id="home">
-                    <a href="https://www.reddit.com/u/{{ site.reddit_username }}"><i class="head-icon fas fa-home"></i></a>
-                </span>
             </div>
         </section>
     </body>
     <footer class="footer footer-text">
-        Alvaro Cerezo &copy; 2021
+        Alvaro Cerezo &copy; 2022
     </footer>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>{{ site.site_title }}</title>
+        <title>Alvaro Cerezo - Urban Data Scientist</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="google-site-verification" content="k4p92PduVR_7ZqAlB8-OMnONNOl9GkkmUh4dlKfbY7o" />
         
@@ -16,7 +16,7 @@
         <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
         <meta name="description" content="Portfolio - Alvaro Cerezo | Urban Data Scientist">
         <style>
-            #cover {background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/01_cover.png"); background-size: cover; background-position: center;} 
+            #cover {background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/00_cover.png"); background-size: cover; background-position: center;} 
             #home {text-align: center; display: block}
             #abstract {color: #7e7e7e;}
         </style>
@@ -24,55 +24,151 @@
     <body>
         <section class="head" id="cover">
             <div class="head-inner-wrap">
-                <div class="head-name head-title animated" id="head-name">Project_01</div>
-                <div class="head-punchline animated">Intro Headline</div>
+                <div class="head-name head-title animated" id="head-name">Rewilding Luxembourg</div>
+                <div class="head-punchline animated">Strategic Planning to fight wetland fragmentation in Luxembourg</div>
             </div>
         </section>
         <section class="section about" id="about">
             <div id="about-text">
                 <p class="paragraph-text justify-text" id="abstract">
-                    My name is Alvaro Cerezo and I am an architect and urban planner specializing in Data Science and GIS technologies. I hold a Msc in Architecture & Urban planning from Universidad Europea de Madrid and a Master in City & Technology from the Institute of Advanced Architecture of Catalonia.
+                    “Rewilding” is a habitat conservation strategy concept. The last years, and as the crisis of the anthropocene keeps rising, Rewilding increasingly draws the attention of the public as it offers a strategic restoration of natural ecosystems. However, the existing rewilding practices are often established upon binary views on ecosystems, such as isolating “artificial” from “the wild” or illustrating ecosystems as “services” to human “beneficiaries” (Deary and Warren 2018).
                 </p>
                 <br><br><hr><br><br>
                 <div class="portfolio-heading">Introduction</div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
-                </p>
+                    In this project, we aim to challenge these binary views by inviting other species to co-manage the trial fields: In the “core area”, the autonomy of other species is respected; In the “buffer area”, humans’ capability in living friendly with other species is valued and emphasized.                </p>
                 <div class=image>
-                    <img class="portfolio_image" src="img\02_analysis.gif" alt="An example to try"/>
-                    <figcaption>An example to try</figcaption>
+                    <img class="portfolio_image" src="img\image01.gif" alt="Core Areas & Buffer Areas"/>
+                    <figcaption>Core Areas (dominated by wild species) & Buffer Areas (dominated by humans)</figcaption>
                 </div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    The challenge is taken in the Luxembourg context, where habitat fragmentation is a significant issue under urban sprawl and highway network expansion. More specifically, habitat fragmentation is a significant issue under urban sprawl and highway network expansion. Among natural habitats affected, wetland are the most vulnerable ones. Thus, wetlands will be our focus trial fields.
                 </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image02.jpg" alt="Wetland fragmentation map and habitat loss data in Luxembourg"/>
+                    <figcaption>Wetland fragmentation map and habitat loss data in Luxembourg</figcaption>
+                </div>
                 <br>
-                <div class="portfolio-heading">Framework</div>
-                <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
-                </p>
                 <br>
                 <div class="portfolio-heading">Methodology</div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    <b>Beavers as cross-species collaborators - </b>We consider beavers (Castor fiber) as our cross-species collaborators to manage the trial fields; the wetlands. Widely known as “ecosystem engineers”, beavers can actually create significant landscape change with their spontaneous dam building behaviour. The creation of natural dams also attracts diverse species to settle, which could restore a more stable trophic chain. Our aim is to either reintroduce or attract beavers from their existing settlements to wetlands, with the help of Beaver Dam Analogue technique.
                 </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image03.jpg" alt="Existing beaver distribution and mechanism of Beaver Dam Analogues"/>
+                    <figcaption>Existing beaver distribution and mechanism of Beaver Dam Analogues</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    In order to specify our area better, we needed to find a potential corridor for beavers and other wetland species. To do so, we firstly identified the protected wetland biotopes in order to cluster them and then, we run a simulation in Circuitscape (using Land cover as resistance map) based on these clusters as focal points.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image04.gif" alt="Process of simulating wetland connectivity map, area with significant green shows higher potential for beaver activities"/>
+                    <figcaption>Process of simulating wetland connectivity map, area with significant green shows higher potential for beaver activities</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    <b>Kids as human collaborators - </b>Apart from beavers, we also identified school kids as our closest human collaborator. After the top-down initiation of our project, kids, as our primary citizen scientists, could stimulate bottom-up awareness by monitoring the whole process. Teachers are also encouraged to collaborate with other relevant parties, supporting kids and raising awareness. And once kids grow up, they themselves would be the advocates/decision makers for the new landscape they monitor and intervene, as they will be environmentally aware since a young age.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image05.gif" alt="Dominant direction of influence through different types of stakeholders in project lifecycle"/>
+                    <figcaption>Dominant direction of influence through different types of stakeholders in project lifecycle</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    Based on the wetland corridors that we identified, we also mapped the pilot cities with the highest potential for cross-sector conversation. In these cities, school kids have access to both science educators and wetlands, with nature protection partners providing support to other affected stakeholders.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image06.jpg" alt="Luxembourg Stakeholders Map"/>
+                    <figcaption>Luxembourg Stakeholders Map</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    <b>Scaling down - </b>In order to specify more our proposal, we scaled down to the main wetland connectivity corridor that is crossing central Luxembourg and is between most of the pilot cities from our stakeholder map. Among the cities along this corridor, we choose Bertrange municipality for more detailed analysis.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image07.gif" alt="Location map of our pilot cities based on potential wetland corridors"/>
+                    <figcaption>Location map of our pilot cities based on potential wetland corridors</figcaption>
+                </div>
+                <br>
+                <br>
+                <div class="portfolio-heading">Analysis</div>
+                <p class="paragraph-text justify-text">
+                    In the Bertrange area we identified the main stakeholders that could involved in our proposal, among which teachers from education institutions, natural protection experts and land owners that will be directly reached. In order to avoid severe conflict and at the same time increase the citizen’s awareness for our project, we allocate the trial fields at the periphery of Bertrange city along River Petrusee. Our first step was to identify the educational facilities of Bertrange and their relation to wetlands locations of the area. We identified 7 educational facilities and 14 wetland locations
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image10.gif" alt="Educational Facilities and Wetland Locations in Bertrange"/>
+                    <figcaption>Educational Facilities and Wetland Locations in Bertrange</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    <b>Human Movements Analysis - </b>Using Grasshopper, we extracted the shortest paths from each school to every wetland. The base network we used was the merge of existing road networks with the barriers of agricultural croplands of the area. Afterwards, we filtered the paths based on time and location, in order to extract the paths that can be an 1h and a 2h walk from the 3 schools that are located in the city center.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image11.gif" alt="Shortest paths between the 3 schools of Bertrange city center and each wetland location"/>
+                    <figcaption>Shortest paths between the 3 schools of Bertrange city center and each wetland location</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    <b>Animal Movements Analysis - </b>In order to understand how the ecosystems of the existing wetlands will be restored and rehabilitated by other species, we needed to identify how animals could possibly be moving in our area through the wetlands. Thus, in order to extract these paths, we used Circuitscape Simulator. We assumed that these paths would be created through the agricultural croplands, so we finally concluded to our "skeleton lines" that is the possible animal movement in Bertrange.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image12.gif" alt="Circuitscape analysis and skeletonisation of the animal paths"/>
+                    <figcaption>Circuitscape analysis and skeletonisation of the animal paths</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    <b>Flood Dynamics Analysis - </b>Since we are working with beaver dams, it is important to understand the flood dynamics of the river. To achieve this, we used the CAESAR simulator before and after putting Beaver Dam Analogues in our model area. As a result, less flood flows into the city in both dry and wet seasons and more wet areas are created behind the Beaver Dam Analogues. To maximize the potential of morphological change by beavers and kids, we defined the dry season flood threshold as the boundary of core areas, while the buffer area will cover the flood threshold of wet seasons.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image13.gif" alt="Ceasar Analysis of river Petrusse"/>
+                    <figcaption>Caesar Analysis of river Petrusse</figcaption>
+                </div>
+                <br>
+                <br>
+                <div class="portfolio-heading">Strategies</div>
+                <p class="paragraph-text justify-text">
+                    Finally, combining all the previous elements, human and animal paths along with the flood limits we can identify and locate our interventions on the area.
+                </p>
+                <p class="paragraph-text justify-text">
+                    In <b>Core Areas</b>, lands are initially prepared by humans with Beaver Dam Analogs, tree protection and new plantations. In the second phase, after the reintroduction of beavers, these core areas will be changed and maintained solely by beavers and other wetland species, with no human intervention.
+                </p>
+                <p class="paragraph-text justify-text">
+                    In <b>Buffer Areas</b>, lands are actively intervened and managed by the local community and land owners, mainly by guerilla gardening, creation of pocket wetlands, maintaining wildlife corridors and wildlife road crossing tunnels.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image14.jpg" alt="Interventions location map"/>
+                    <figcaption>Interventions location map</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    Along with these interventions, kids are invited to observe and monitor the data as little citizen scientists. We propose an app to facilitate this process, which helps kids to see how the interventions evolve and how other species react to the interventions through time.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image09.gif" alt="Data Monitoring and App Interface"/>
+                    <figcaption>Data Monitoring and App Interface</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    We explain how these interventions could take place through a story from Helena, a science teacher in a primary school in Bertrange.
+                </p>
+                <p class="paragraph-text justify-text">
+                    <b>Stage 1 - </b>After one year of preparation, beavers are reintroduced to the site, creating a complex wetland matrix that inundates part of the adjacent buffer zone.<br>
+                    <b>Stage 2 - </b>Kids can plant in the wet experimental field the seed bombs wherever they want, while their access is restricted to the core area by notice and a row of plantings.<br>
+                    <b>Stage 3 - </b>The observation spots used as key thresholds for kids and visitors to observe changes in the core zone, whereas camera trapping provides better monitoring on buffer zone.<br>
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image15.gif" alt="Rewilding as a storyline"/>
+                    <figcaption>Rewilding as a storyline</figcaption>
+                </div>
+                <br>
                 <br>
                 <div class="portfolio-heading">Conclusion</div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    We would like to conclude with our vision, where beavers in Luxembourg does not simply appear in isolated reserves, but are actively engaged in changing the landscape of human society. With the adaptive intervention and monitoring from kids and the local communities, we believe a more tolerant, non-binary coexistence could take place, with the human society being “rewilded”.
                 </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image16.jpg" alt="A collage vision"/>
+                </div>
                 <br>
                 <p class="paragraph-text justify-text" id="credits">
-                    <b>Title</b> is a project of IAAC, Institute for Advanced Architecture of Catalonia developed at Master in City & Technology by student: <b>Adriana Aguirre Such, Aishath Nadh Ha Naseer, Arina Novikova and Sinay Coskun</b> and faculty: <b>Diego Pajarito</b>.
+                    <b>Rewilding Luxembourg</b> is a project of IAAC, Institute for Advanced Architecture of Catalonia developed at Master in City & Technology by student: <b>Arina Novikova, Dongxuan Zhu, Stefania-Maria Kousoula and Alvaro Cerezo Carrizo</b>, and faculty: <b>Eduardo Rico, Mathilde Marengo and Iacopo Neri</b>.
                 </p>
-                <br>
-                <br>
-                <span class="hint--bottom bottom-link" aria-label="Home" id="home">
-                    <a href="https://www.reddit.com/u/{{ site.reddit_username }}"><i class="head-icon fas fa-home"></i></a>
-                </span>
             </div>
         </section>
     </body>
     <footer class="footer footer-text">
-        Alvaro Cerezo &copy; 2021
+        Alvaro Cerezo &copy; 2022
     </footer>
 </html>

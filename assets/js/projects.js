@@ -15,72 +15,72 @@ let render_projects = (slug) => {
             link: 'portfolio/project_01/portfolio.html',
             title: 'Flatten the curve',
             demo: false,
-            technologies: ['QGIS', 'Grasshopper', 'SQL'],
+            technologies: ['QGIS', 'Rhino', 'Grasshopper', 'SQL'],
             description: "A new energy exchange approach on a district scale",
-            categories: ['All', 'Data viz', 'Title_02', 'Title_03']
+            categories: ['All', 'Title_01', 'Title_03']
         },
         {
             image: 'assets/images/portfolio/rewilding_luxembourg.png',
             link: 'portfolio/project_02/portfolio.html',
             title: 'Rewilding Luxembourg',
             demo: false,
-            technologies: ['Data visualization', 'Python'],
-            description: "Microgrid energy distribution network on a district scale",
-            categories: ['All', 'Data viz', 'Title_02', 'Title_03']
+            technologies: ['QGIS', 'Circuitscape', 'Caesar', 'Photoshop'],
+            description: "Strategy Planning to fight wetland fragmentation in Luxembourg",
+            categories: ['All', 'Title_01', 'Title_03']
         },
         {
             image: 'assets/images/portfolio/energy_as_a_right.png',
             link: 'portfolio/project_03/portfolio.html',
             title: 'Energy as a right',
             demo: false,
-            technologies: ['Data visualization', 'Python'],
-            description: "Microgrid energy distribution network on a district scale",
-            categories: ['All', 'Data viz', 'Title_02', 'Title_03']
+            technologies: ['QGIS', 'Illustrator', 'SQL', 'Python'],
+            description: "A vision for a more sustainable, democratic and efficient energy eco-system",
+            categories: ['All', 'Title_01', 'Title_03']
         },
         {
             image: 'assets/images/portfolio/educational_hubs.png',
             link: 'portfolio/project_04/portfolio.html',
             title: 'Educational Hubs',
             demo: false,
-            technologies: ['Data visualization', 'Python'],
-            description: "Microgrid energy distribution network on a district scale",
-            categories: ['All', 'Data viz', 'Title_02', 'Title_03']
+            technologies: ['QGIS', 'Illustrator', 'Photoshop', 'Autocad'],
+            description: "From Social Capital to Spatial Capital in Tallinn",
+            categories: ['All', 'Title_03']
         },
         {
             image: 'assets/images/portfolio/court_yazd_city.png',
             link: 'portfolio/project_05/portfolio.html',
             title: 'Court Yazd City',
             demo: false,
-            technologies: ['Data visualization', 'Python'],
-            description: "Microgrid energy distribution network on a district scale",
-            categories: ['All', 'Data viz', 'Title_02', 'Title_03']
+            technologies: ['Rhino', 'Grasshopper', 'Python', 'Wallacei'],
+            description: "A computational approach to Vernacular Architecture",
+            categories: ['All', 'Title_02', 'Title_03']
         },
         {
             image: 'assets/images/portfolio/wetland_rewailding.png',
             link: 'portfolio/project_06/portfolio.html',
             title: 'Wetland Rew[AI]lding',
             demo: false,
-            technologies: ['Data visualization', 'Python'],
-            description: "Microgrid energy distribution network on a district scale",
-            categories: ['All', 'Data viz', 'Title_02', 'Title_03']
+            technologies: ['Photoshop', 'Python', 'Paperspace'],
+            description: "Machine Learning algorithms to generate a serie of habitat pattern",
+            categories: ['All', 'Title_02']
         },
         {
             image: 'assets/images/portfolio/social_interaction_monitoring.png',
             link: 'portfolio/project_07/portfolio.html',
             title: 'Social Interaction Monitoring',
             demo: false,
-            technologies: ['Data visualization', 'Python'],
+            technologies: ['Premiere', 'Grasshopper', 'Python'],
             description: "Microgrid energy distribution network on a district scale",
-            categories: ['All', 'Data viz', 'Title_02', 'Title_03']
+            categories: ['All', 'Title_01', 'Title_02']
         },
         {
             image: 'assets/images/portfolio/sustainable_housing_tool.png',
             link: 'portfolio/project_08/portfolio.html',
             title: 'Sustainable Housing Tool',
             demo: false,
-            technologies: ['Data visualization', 'Python'],
+            technologies: ['QGIS', 'Rhino', 'Grasshopper', 'Python'],
             description: "Microgrid energy distribution network on a district scale",
-            categories: ['All', 'Data viz', 'Title_02', 'Title_03']
+            categories: ['All', 'Title_02', 'Title_03']
         },
     ]
 

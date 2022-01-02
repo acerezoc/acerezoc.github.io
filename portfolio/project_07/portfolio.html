@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>{{ site.site_title }}</title>
+        <title>Alvaro Cerezo - Urban Data Scientist</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="google-site-verification" content="k4p92PduVR_7ZqAlB8-OMnONNOl9GkkmUh4dlKfbY7o" />
         
@@ -16,7 +16,7 @@
         <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
         <meta name="description" content="Portfolio - Alvaro Cerezo | Urban Data Scientist">
         <style>
-            #cover {background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/01_cover.png"); background-size: cover; background-position: center;} 
+            #cover {background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/00_cover.png"); background-size: cover; background-position: center;} 
             #home {text-align: center; display: block}
             #abstract {color: #7e7e7e;}
         </style>
@@ -24,55 +24,105 @@
     <body>
         <section class="head" id="cover">
             <div class="head-inner-wrap">
-                <div class="head-name head-title animated" id="head-name">Project_01</div>
-                <div class="head-punchline animated">Intro Headline</div>
+                <div class="head-name head-title animated" id="head-name">Interaction Evaluation Tool</div>
+                <div class="head-punchline animated">Social Interaction Monitoring during COVID19 time</div>
             </div>
         </section>
         <section class="section about" id="about">
             <div id="about-text">
                 <p class="paragraph-text justify-text" id="abstract">
-                    My name is Alvaro Cerezo and I am an architect and urban planner specializing in Data Science and GIS technologies. I hold a Msc in Architecture & Urban planning from Universidad Europea de Madrid and a Master in City & Technology from the Institute of Advanced Architecture of Catalonia.
+                    Public Open Spaces are an essential part of cities. It’s fundamental to measure its quality to be able to understand and design them. For this project, we choose social interaction as a way to measure the quality of public open spaces, because it has a relationship with the spatial form of the city, and ultimately derives patterns of behavior. Another useful understanding is how cities take part in the production of actions, or how the spatial form influences social interaction.
                 </p>
                 <br><br><hr><br><br>
                 <div class="portfolio-heading">Introduction</div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    Social Interaction in the context can be defined as “collections of agents interacting in space-time within geographic boundaries”. We try to measure social interaction by computer vision, which employs machine learning to interpret, understand, and derive visual patterns. A more quantitative form of measurement, in contrast to traditional qualitative methods.
                 </p>
                 <div class=image>
-                    <img class="portfolio_image" src="img\02_analysis.gif" alt="An example to try"/>
-                    <figcaption>An example to try</figcaption>
+                    <img class="portfolio_image" src="img\image01.jpg" alt="Area of Study"/>
+                    <figcaption>Area of Study</figcaption>
                 </div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    In this research, we want to measure the average members, average distance, and average interaction time of people. Our hypothesis is that human interaction before the covid curfew would affect the number of people interacting. Also, measure interaction depending on exogenous variables such as weather or political demonstrations. We chose St Jaume square due to its open space, high dynamism, and its important role in Barcelona city life.
                 </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image02.jpg" alt="Research Hypothesis"/>
+                    <figcaption>Research Hypothesis</figcaption>
+                </div>
                 <br>
-                <div class="portfolio-heading">Framework</div>
-                <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
-                </p>
                 <br>
                 <div class="portfolio-heading">Methodology</div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    In order to develop the project, the methodology used is based in the following steps:
+                    <b>1.</b>We recorded 6 videos; 3 before and 3 after the curfew 
+                    <b>2.</b>Next, we prepared data using Python and QGIS – change the perspective view to bird’s eye perspective
+                    <b>3.</b>We mapped all the detected objects, filtered people and umbrellas (on the first video it was raining, and computer vision detects umbrellas instead of people)
+                    <b>4.</b>Next was to check the distance people distance (which helped us to divide them into individuals and groups)
+                    <b>5.</b>For the groups, we checked some parameters ( like the distance between the people, time of interaction, and the number of members in the group)
+                    <b>6.</b>As a final step we put all these parameters into a matrix, to see the statistics of the results
                 </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image03.jpg" alt="Research Workflow"/>
+                    <figcaption>Research Workflow</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    After detecting people we assigned them a 1 m radius from the center. When the circles overlapped it detected it as an interaction. If the interaction lasted more than 2 frames, we consider it as a group. Within the groups, we were checking, as mentioned before, the number of people, time of interaction, and the average distance between the people inside the groups. After collecting those data from our 6 videos we took the average from each video to compare the data and conclude it. The data collection process consisted of saving every 50th frame from the video. Most of our videos were 20 minutes long so we have 600 frames per video.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image04.jpg" alt="Data Collection Strategy"/>
+                    <figcaption>Data Collection Strategy</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    Having filtered the people, we start to measure the distances between the people to create clusters of groups. From there we use the time factor to identify the groups of people that are actually staying together and not just passing by at a close distance, once these groups are detected we create a heatmap to understand the areas in which people move in groups. After having categorized the people that move in groups, or are passing by and people that move individually we track their movement along with the frames over time, and in this particular case we are also clustering the groups by their size.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image05.jpg" alt="The process - Step by step"/>
+                    <figcaption>The process - Step by step</figcaption>
+                </div>
+                <br>
+                <br>
+                <div class="portfolio-heading">Analysis</div>
+                <p class="paragraph-text justify-text">
+                    This process was repeated across all 6 videos, analyzing the total number of people, no, of groups, the total number of people in these groups, and number of crossings. Also from the 6 videos, the first 3 are from before the curfew ended and the last 3 after in order to make a comparative analysis at the end.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image06.gif" alt="Interaction Analysis - Movement Tracking"/>
+                    <figcaption>Interaction Analysis - Movement Tracking</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    From the previous analysis on the spatial distribution of our groups, we conclude that there is no significant difference before and after the curfew period. There is a preference for the central area of the plaza and the one next to the building facade on the south side between Carrer de Ferran and Carrer del Call, where an old coffee shop is located.
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image07.jpg" alt="Comparative Analysis - Spatial occupancy"/>
+                   </div>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image08.gif" alt="Comparative Analysis - Spatial occupancy"/>
+                    <figcaption>Comparative Analysis - Spatial occupancy</figcaption>
+                </div>
+                <br>
                 <br>
                 <div class="portfolio-heading">Conclusion</div>
                 <p class="paragraph-text justify-text">
-                    I consider myself as a very dedicated and hard-worker professional that have had the great opportunity to be part of multidisciplinary and multicultural teams both in my working and education career.
+                    After extracting the main data from each of the videos recorded, we see that even though the average occupancy of the square was higher before the 8th of May, the number of interactions between pedestrians increased after the curfew ends. Even if the number of groups of people gathering together has not increased that much, their total number of members grows, staying closer and longer (almost 3 seconds more on average).
+                </p>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image09.jpg" alt="Data extracted from recorded videos"/>
+                </div>
+                <div class=image>
+                    <img class="portfolio_image" src="img\image10.jpg" alt="Before and after curfew - Conclusions"/>
+                    <figcaption>Data extracted from recorded videos</figcaption>
+                </div>
+                <p class="paragraph-text justify-text">
+                    We think this research could be applied to other squares, providing information about how people gather, what are the places to stay, what are the places to move, and overall it could provide a specific aggregation pattern to each of them. Crossing these patterns with some other morphological and spatial data, it could be possible to categorize squares according to their aggregation pattern and support the way in which public spaces can be designed and activated.
                 </p>
                 <br>
                 <p class="paragraph-text justify-text" id="credits">
-                    <b>Title</b> is a project of IAAC, Institute for Advanced Architecture of Catalonia developed at Master in City & Technology by student: <b>Adriana Aguirre Such, Aishath Nadh Ha Naseer, Arina Novikova and Sinay Coskun</b> and faculty: <b>Diego Pajarito</b>.
+                    <b>Interaction Evaluation Tool</b> is a project of IAAC, Institute for Advanced Architecture of Catalonia developed at Master in City & Technology by student: <b>Riccardo Palazzolo, Marta Galdys, Nadh Ha Naseer, Juan Pablo Pintado & Alvaro Cerezo</b>, and faculty: <b>Aldo Sollazzo, Iacopo Neri & Soroush Garivani</b>.
                 </p>
-                <br>
-                <br>
-                <span class="hint--bottom bottom-link" aria-label="Home" id="home">
-                    <a href="https://www.reddit.com/u/{{ site.reddit_username }}"><i class="head-icon fas fa-home"></i></a>
-                </span>
             </div>
         </section>
     </body>
     <footer class="footer footer-text">
-        Alvaro Cerezo &copy; 2021
+        Alvaro Cerezo &copy; 2022
     </footer>
 </html>
